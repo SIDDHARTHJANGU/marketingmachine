@@ -69,7 +69,7 @@ const TheGrowth = () => {
                   src={tabonevideo}
                 ></video>
                 <div className=" card_smart ">
-                  <Row className=" d-flex justify-content-around  align-items-center px-3 pt-xl-5 pb-xl-5  ">
+                  <Row className=" d-flex justify-content-around   align-items-center px-3 pt-xl-5 pb-xl-5  ">
                     <Col lg={4} sm={6} className=" text-center text-sm-start">
                       <p className=" text-uppercase fw_700 fs-80 text-white ff_SöhneSchmal lin_high pb-4 ">
                         the smartest{" "}
@@ -185,12 +185,8 @@ const TheGrowth = () => {
                   src={tabthreevideo}
                 ></video>
                 <div className=" card_smart ">
-                  <Row className=" d-flex justify-content-around  px-3  ">
-                    <Col
-                      xl={5}
-                      md={6}
-                      className=" text-center text-sm-start mt-5 pt-3"
-                    >
+                  <Row className=" d-flex justify-content-around align-items-center  px-3  ">
+                    <Col xl={5} md={6} className=" text-center text-sm-start ">
                       <p className=" text-uppercase fw_700 fs_80 text-white ff_SöhneSchmal lin_high pb-lg-4 ">
                         Project radar
                       </p>
