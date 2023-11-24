@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import { Arrow, Search } from "./Mysvg";
+import { Arrow } from "./Mysvg";
 import vertorright from "../assets/img/VectorRight.png";
 import vertorleft from "../assets/img/VectorLeft.png";
 import green from "../assets/img/hero_squiggle.png";
@@ -95,24 +95,51 @@ const Myheader = () => {
             </DropdownButton>
           </li>
           <li className="nav">
-            <a href="how" className=" fw_500 fs_15 text-black ff_Neue ">
+            <a href="how" className=" fw_500 fs-15 text-black ff_Neue ">
               Resources
             </a>
           </li>
           <div>
-            <Search />
+            {/* <Search /> */}
+            <div className="search_icon ">
+              {" "}
+              <form role="search" method="get" class="search-form" action="">
+                <label>
+                  <input
+                    type="text"
+                    class="search-field fs_12 fw_400 ff_MaisonNeue text-white"
+                    placeholder="Search …"
+                  />
+                </label>
+                <input type="text" class="search-submit" />
+              </form>
+            </div>
           </div>
           <button className=" talk_btn fw_600 fs-15 text-black ff_Neue">
             Let’s Talk <Arrow />
           </button>
         </ul>
-        <div
-          className=" position-relative z_10 d_none"
-          onClick={() => {
-            setshow(!show);
-          }}
-        >
-          {show ? <img src={close} alt="#" /> : <img src={menu} alt="#" />}
+        <div className=" gap-4 d-flex">
+          <div className=" search_icon2">
+            <form role="search" method="get" class="search-form" action="">
+              <label>
+                <input
+                  type="text"
+                  class="search-field fs_12 fw_400 ff_MaisonNeue text-white"
+                  placeholder="Search …"
+                />
+              </label>
+              <input type="text" class="search-submit" />
+            </form>
+          </div>
+          <div
+            className=" position-relative z_10 d_none"
+            onClick={() => {
+              setshow(!show);
+            }}
+          >
+            {show ? <img src={close} alt="#" /> : <img src={menu} alt="#" />}
+          </div>
         </div>
       </nav>
       <div className=" flex-grow-1 d-lg-flex">

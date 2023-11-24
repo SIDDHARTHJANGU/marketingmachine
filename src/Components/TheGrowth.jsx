@@ -22,6 +22,7 @@ import globetwo from "../assets/img/globetwo.png";
 import battlethree from "../assets/img/battlethree.png";
 import ratefour from "../assets/img/ratefour.png";
 import Slider from "react-slick";
+import loops from "../assets/img/Loop.png";
 const TheGrowth = () => {
   const sliderone = {
     dots: false,
@@ -53,7 +54,7 @@ const TheGrowth = () => {
             Businesses trust Venveo to power grow.
           </p>
         </div>
-        <div className=" pt-lg-5 mt-3 ">
+        <div className=" pt-lg-5 mt-3 gap-4 ">
           <Tabs
             defaultActiveKey="home"
             id="uncontrolled-tab-example"
@@ -104,11 +105,27 @@ const TheGrowth = () => {
                       sm={6}
                       className=" d-flex flex-column justify-content-center align-items-center  gap-5 pt-5 pb-5 "
                     >
-                      <img className=" hone" src={home} alt="img" />
-                      <img className="AIA" src={AIA} alt="img" />
-                      <img className="Lowe" src={Lowe} alt="img" />
-                      <img className="build" src={build} alt="img" />
-                      <img className="houzz" src={houzz} alt="img" />
+                      <div>
+                        <img className=" home" src={home} alt="img" />
+                      </div>
+                      <div>
+                        <img className="AIA" src={AIA} alt="img" />
+                      </div>
+                      <div>
+                        <img className="Lowe" src={Lowe} alt="img" />
+                      </div>
+                      <div className="position-relative">
+                        <img className="build" src={build} alt="img" />
+                        <img
+                          className=" position-absolute loops z-n1 "
+                          src={loops}
+                          alt="img"
+                        />
+                      </div>
+                      <div>
+                        {" "}
+                        <img className="houzz" src={houzz} alt="img" />
+                      </div>
                     </Col>
                     <Col lg={4}>
                       <Slider {...sliderone}>

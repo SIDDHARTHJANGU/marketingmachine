@@ -430,12 +430,27 @@ h6 {
 .lin_high {
   line-height: 70px;
 }
+.search_icon {
+  display: none;
+}
+.search_icon2 {
+  display: block;
+}
 .nav-link {
   color: black !important;
   font-size: 18px !important;
   font-weight: 600 !important;
   font-family: "Neue";
   opacity: 0.35;
+}
+.nav-link::before {
+  position: absolute;
+  content: url("./assets/img/ROI.png");
+  margin-top: 15px;
+  opacity: 0;
+}
+.nav-link.active:before {
+  opacity: 1;
 }
 .nav-link.active {
   opacity: 1;
@@ -457,6 +472,7 @@ h6 {
   --bs-nav-tabs-link-active-bg: none !important;
   --bs-nav-tabs-link-active-border-color: none !important;
   border-bottom: none !important;
+  gap: 45px !important;
 }
 .learncard {
   padding: 24px 24px 16px 24px;
@@ -580,7 +596,7 @@ h6 {
     rgba(0, 0, 0, 0) 99.72%
   );
 }
-.hone {
+.home {
   width: 64px;
   cursor: pointer;
 }
@@ -596,6 +612,7 @@ h6 {
   width: 102px;
   cursor: pointer;
 }
+
 .houzz {
   width: 177.32px;
   cursor: pointer;
@@ -608,6 +625,11 @@ h6 {
   padding: 31px 32px;
   background: #ff4242;
   border: none;
+  transition: all 350ms linear;
+}
+.Subscribe_btn:hover {
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px white;
 }
 .call_btn {
   padding: 31px 32px;
@@ -654,6 +676,7 @@ h6 {
   right: 5%;
   width: 20%;
 }
+
 .btn-primary {
   --bs-btn-color: #000 !important;
   --bs-btn-bg: transparent !important;
@@ -674,8 +697,8 @@ h6 {
 /* backtotop */
 .scrollTop {
   position: fixed;
-  width: 70px;
-  height: 70px !important;
+  width: 50px;
+  height: 50px !important;
   bottom: 30px;
   padding: 9px;
   right: 30px;
@@ -691,6 +714,11 @@ h6 {
 }
 .scrollTop:hover {
   background-color: black;
+}
+.loops {
+  top: -100%;
+  left: -50%;
+  opacity: 1;
 }
 
 .btn {
@@ -719,6 +747,12 @@ h6 {
 }
 @media (min-width: 900px) {
   .d_none {
+    display: none;
+  }
+  .search_icon {
+    display: block;
+  }
+  .search_icon2 {
     display: none;
   }
 }
@@ -961,6 +995,9 @@ h6 {
   .fs_15 {
     font-size: 12px;
   }
+  .fs-15 {
+    font-size: 15px;
+  }
   .fs_16 {
     font-size: 16px;
   }
@@ -1176,4 +1213,41 @@ h6 {
     right: 0;
     width: 15%;
   }
+}
+
+/* search icon */
+
+.search-form {
+  right: 200px;
+  top: 200px;
+}
+
+.search-field {
+  background-color: transparent !important;
+  background-image: url("https://wp-themes.com/wp-content/themes/twentythirteen/images/search-icon.png");
+  background-position: 5px center !important;
+  background-repeat: no-repeat !important;
+  background-size: 24px 24px !important;
+  border: none !important ;
+  cursor: pointer !important;
+  height: 40px !important ;
+  margin: 3px 0 !important;
+  padding: 0 0 0 34px !important;
+  position: relative !important;
+  -webkit-transition: width 400ms ease, background 400ms ease !important;
+  transition: width 400ms ease, background 400ms ease !important;
+  width: 0px !important;
+  cursor: pointer !important;
+}
+
+.search-field:focus {
+  background-color: #097980 !important;
+  border: 0 !important;
+  cursor: text !important;
+  outline: 0 !important;
+  width: 160px !important;
+  color: white !important;
+}
+.search-form .search-submit {
+  display: none !important;
 }
