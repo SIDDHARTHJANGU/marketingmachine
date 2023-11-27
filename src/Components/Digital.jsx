@@ -29,7 +29,7 @@ export const Digital = () => {
             </span>
           </p>
         </div>
-        <Row className="  d-flex justify-content-evenly pt-lg-5 mt-4 z-3">
+        <Row className="  d-flex justify-content-evenly pt-lg-5 mt-4 z-3 px-xl-5">
           <Col lg={6} className=" d-flex justify-content-center ">
             <div className="sec4_card " data-aos="fade-down-right">
               <div className=" d-sm-flex py-sm-5 px-sm-4 px-2 py-3 ">
@@ -105,7 +105,7 @@ export const Digital = () => {
             </div>
           </Col>
         </Row>
-        <Row className=" d-flex justify-content-evenly pt-lg-5 pt-4 pb-5 ">
+        <Row className=" d-flex justify-content-evenly pt-lg-5 pt-4 pb-5 px-xl-5 ">
           <Col lg={6} className=" d-flex justify-content-center ">
             <div className="sec4_card " data-aos="fade-down-right">
               <div className=" d-sm-flex py-sm-5 px-sm-4 px-2 py-3">
@@ -169,7 +169,7 @@ export const Digital = () => {
                       Prioritize leads with data-backed insights
                     </li>
                     <li className=" fw_600 fs_15 ff_MaisonNeue text-black">
-                      Turn opportunities into closed deals
+                      Turn opportunities closed deals
                     </li>
                   </ul>
                   <button className=" Explore_btn fs_15 fw_600 ff_MaisonNeue text-black mt-5 gap-2 ">

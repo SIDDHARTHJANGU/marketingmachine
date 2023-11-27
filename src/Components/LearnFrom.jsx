@@ -30,7 +30,7 @@ const LearnFrom = () => {
           <p className=" fw_400 fs_15 ff_MaisonNeue text-black">
             Digital marketing resources from Venveo to help you grow.
           </p>
-          <button className=" Learn fw_600 fs_15 text-black ff_MaisonNeue mt-4">
+          <button className=" see_btn fw_600 fs_15 text-black ff_MaisonNeue mt-4">
             See All <Learnm />
           </button>
         </div>

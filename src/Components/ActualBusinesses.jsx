@@ -75,33 +75,93 @@ const ActualBusinesses = () => {
         />
 
         <Slider ref={setslider} {...setslider} className=" setslider">
-          <div className=" d-flex justify-content-center slider-card position-relative">
+          <div className=" d-flex flex-column align-items-center justify-content-center slider-card position-relative ">
             <img
-              className=" position-absolute z-1 play_Btn"
+              className=" position-absolute z-3 play_Btn"
               src={playbtn}
               alt=""
             />
-            <img className=" width z-n1" src={Grant} alt="img" />
+            <img className=" width z-n1 " src={Grant} alt="img" />
+            <div className=" text-center pt-3 pb-5" data-aos="fade-up">
+              <p className=" fw_300 fs_30 ff_MaisonNeue text-white">
+                “They are really aligned with how we are{" "}
+                <span className=" d-lg-block">
+                  building the business from a strategic
+                </span>{" "}
+                <span className=" d-lg-block">
+                  {" "}
+                  standpoint and from branding, messaging
+                </span>{" "}
+                and cultural standpoint.”
+              </p>
+              <p className=" fw_400 fs_15 ff_MaisonNeue text-white mt-4">
+                Jon Vaughan,{" "}
+                <span className=" dplg-block">REGIONAL VP-SE AT US LBM</span>
+              </p>
+              <div className=" mt-3">
+                <Jones />
+              </div>
+            </div>
           </div>
-          <div className=" d-flex justify-content-center slider-card position-relative">
+          <div className=" d-flex flex-column align-items-center justify-content-center slider-card position-relative">
             <img
               className=" position-absolute z-1 play_Btn"
               src={playbtn}
               alt=""
             />
             <img className=" width" src={jone} alt="img" />
+            <div className=" text-center  pt-3 pb-5" data-aos="fade-up">
+              <p className=" fw_300 fs_30 ff_MaisonNeue text-white">
+                “They are really aligned with how we are{" "}
+                <span className=" d-lg-block">
+                  building the business from a strategic
+                </span>{" "}
+                <span className=" d-lg-block">
+                  {" "}
+                  standpoint and from branding, messaging
+                </span>{" "}
+                and cultural standpoint.”
+              </p>
+              <p className=" fw_400 fs_15 ff_MaisonNeue text-white mt-4">
+                Jon Vaughan,{" "}
+                <span className=" dplg-block">REGIONAL VP-SE AT US LBM</span>
+              </p>
+              <div className=" mt-3">
+                <Jones />
+              </div>
+            </div>
           </div>
-          <div className=" d-flex justify-content-center slider-card position-relative">
+          <div className=" d-flex flex-column align-items-center justify-content-center slider-card position-relative">
             <img
               className=" position-absolute z-1 play_Btn"
               src={playbtn}
               alt=""
             />
             <img className=" width" src={Michel} alt="img" />
+            <div className=" text-center pt-3 pb-5" data-aos="fade-up">
+              <p className=" fw_300 fs_30 ff_MaisonNeue text-white">
+                “They are really aligned with how we are{" "}
+                <span className=" d-lg-block">
+                  building the business from a strategic
+                </span>{" "}
+                <span className=" d-lg-block">
+                  {" "}
+                  standpoint and from branding, messaging
+                </span>{" "}
+                and cultural standpoint.”
+              </p>
+              <p className=" fw_400 fs_15 ff_MaisonNeue text-white mt-4">
+                Jon Vaughan,{" "}
+                <span className=" dplg-block">REGIONAL VP-SE AT US LBM</span>
+              </p>
+              <div className=" mt-3">
+                <Jones />
+              </div>
+            </div>
           </div>
         </Slider>
       </div>
-      <div className=" text-center mt-5 pt-3 pb-5" data-aos="fade-up">
+      {/* <div className=" text-center mt-5 pt-3 pb-5" data-aos="fade-up">
         <p className=" fw_300 fs_30 ff_MaisonNeue text-white">
           “They are really aligned with how we are{" "}
           <span className=" d-lg-block">
@@ -120,7 +180,7 @@ const ActualBusinesses = () => {
         <div className=" mt-3">
           <Jones />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
