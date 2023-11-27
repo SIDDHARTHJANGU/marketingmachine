@@ -296,6 +296,7 @@ input {
 }
 .slick-dots {
   bottom: -275% !important;
+  z-index: 1000 !important;
 }
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
